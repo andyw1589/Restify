@@ -1,0 +1,27 @@
+.features-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 12rem);
+    row-gap: 1rem;
+}
+
+#image-container {
+    position: relative;
+}
+
+.main-img{
+    object-fit: cover;
+    aspect-ratio: 1.33;
+}
+
+#image-container:hover{
+    filter: brightness(85%);
+    transition: all 0.3s ease;
+}
+
+#image-container img{
+    border-radius: 1rem;
+}
+
+.property-pictures, .property-pictures img{
+    width: min(70vw, 70vh);
+}

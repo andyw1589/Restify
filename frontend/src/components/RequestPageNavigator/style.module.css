@@ -1,0 +1,11 @@
+#pagenavigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* target enabled buttons */
+#pagenavigator button:not(button[disabled]) {
+    font-weight: bold;
+}

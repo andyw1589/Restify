@@ -1,0 +1,32 @@
+#notifssplitview {
+    display: grid;
+    grid-template-columns: 35% auto;
+    width: 100%;
+}
+
+#notifscontainer {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#notifscontainer button {
+    align-self: center;
+}
+
+#notifscontent {
+    overflow-y: auto;
+}
+
+#notifssplitview,#notifscontainer,#notifscontent {
+    height: 70vh;
+}
+
+@media only screen and (max-width: 800px) {
+    #notifssplitview {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}

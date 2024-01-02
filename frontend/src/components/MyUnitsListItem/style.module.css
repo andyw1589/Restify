@@ -1,0 +1,10 @@
+.card-flex {
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.card-img-size {
+    width: 225px;
+    height: 150px;
+}

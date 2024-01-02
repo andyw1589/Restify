@@ -1,0 +1,74 @@
+#wave {
+    width: 100%;
+    position: absolute;
+    bottom: 2.5rem;
+    z-index: -1;
+}
+
+#grid {
+    display: flex;
+    flex-direction: row;
+    margin-top: 6.5rem;
+    margin-left: 12rem;
+    margin-right: 15rem;
+    justify-content: space-between;
+}
+
+#logotext {
+    margin-top: 10rem;
+}
+
+#loginform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+
+#formcontainer {
+    width: 600px;
+}
+
+#loginform #otherfields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#loginform #namefields {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1300px) {
+    #logotext {
+        margin-top: 0rem;
+    }
+
+    #grid {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        align-items: center;
+    }
+
+    #formcontainer {
+        width: 80%;
+        margin-bottom: 10rem;
+        margin-top: 2rem;
+    }
+
+    #loginform {
+        padding: 0.5rem;
+    }
+
+    #logotext {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

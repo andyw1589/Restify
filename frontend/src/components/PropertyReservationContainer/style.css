@@ -1,0 +1,5 @@
+.reservation-datepicker,
+.reservation-datepicker > div > .react-datepicker,
+.reservation-datepicker > div > .react-datepicker > .react-datepicker__month-container{
+    width: 100%;
+}

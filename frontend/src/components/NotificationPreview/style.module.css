@@ -1,0 +1,63 @@
+.notifpreview {
+    display: flex;
+    flex-direction: row;
+}
+
+.notifbox {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: left;
+    background-color: rgb(248, 249, 250);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 1px solid rgb(200, 200, 200);
+    border-top: 0;
+    border-right: 0;
+    height: 41px;
+    width: 85%;
+}
+
+.notifbox:hover {
+    background-color: rgb(220, 220, 220);
+    cursor: pointer;
+}
+
+.notifunread {
+    background-color: #e0f4ff;
+}
+
+.notifunread .notifheader {
+    font-weight: bold;
+}
+
+.notifunread:hover {
+    background-color: #c2e0f0;
+}
+
+.notifselected, .notifselected:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+.notifheader {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.notiftime {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 20%;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.deletebtn {
+    margin-right: 0;
+    width: 15%;
+}

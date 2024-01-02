@@ -1,0 +1,32 @@
+#header {
+    height: 100%;
+    line-height: 2.5rem;
+}
+
+#header nav a,details {
+    margin-right: 1rem;
+}
+
+#header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+#header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header nav #navlinks,#navdropdowns {
+    display: flex;
+    align-items: center;
+}
+
+#header nav #notifs {
+    margin-right: 1rem;
+}
+
+#header nav #brand {
+    font-weight: 100%;
+    font-size: 1.5rem;
+}

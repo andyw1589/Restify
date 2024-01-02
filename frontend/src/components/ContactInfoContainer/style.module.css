@@ -1,0 +1,12 @@
+.avatar {
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    object-fit: cover;
+}
+
+.avatar-placeholder {
+    border-radius: 50%;
+    padding: 2rem;
+    background-color: grey;
+}

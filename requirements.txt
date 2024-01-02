@@ -1,0 +1,8 @@
+pillow
+django==4.1.7
+djangorestframework
+djangorestframework-simplejwt
+pyyaml
+uritemplate
+drf-spectacular
+django-cors-headers

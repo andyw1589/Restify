@@ -1,0 +1,217 @@
+[
+{
+  "model": "accounts.user",
+  "fields": {
+    "password": "pbkdf2_sha256$390000$1Uxhygfp67HBOvJPjxboHq$m9pqhf5go7lsKCVbVxeUq5DsijVumKSPr+xROOUxqT8=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "JohnDoe",
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-03-10T06:12:49.252Z",
+    "password2": "",
+    "phone_number": "1234567890",
+    "is_host": true,
+    "avatar": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "fields": {
+    "password": "pbkdf2_sha256$390000$EmddiAN3ePOIEJredywR32$42+sJCSlZGV53fC4kKRsk1n5gXpLnOF+s6wxPyQbJSE=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "JaneSmith",
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "email": "jane@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-03-10T06:22:56.440Z",
+    "password2": "",
+    "phone_number": "6470123456",
+    "is_host": false,
+    "avatar": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "fields": {
+    "password": "pbkdf2_sha256$390000$xXWFyd0Aea2QmqXd93JVht$UvWjnxeBf8Ko1YEoxgPBsyc93g+/uBTJ9r/XWW7cCc8=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "JackSun",
+    "first_name": "Jack",
+    "last_name": "Sun",
+    "email": "jack@sun.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-03-19T16:41:06.181Z",
+    "password2": "",
+    "phone_number": "6470000000",
+    "is_host": false,
+    "avatar": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "notifications.notification",
+  "pk": 1,
+  "fields": {
+    "sender": [
+      "JaneSmith"
+    ],
+    "receiver": [
+      "JohnDoe"
+    ],
+    "read_by_receiver": false,
+    "notif_type": "request",
+    "time_sent": "2023-03-19T03:53:18.246Z",
+    "data": {
+      "host": 1
+    }
+  }
+},
+{
+  "model": "notifications.notification",
+  "pk": 2,
+  "fields": {
+    "sender": [
+      "JaneSmith"
+    ],
+    "receiver": [
+      "JohnDoe"
+    ],
+    "read_by_receiver": false,
+    "notif_type": "request",
+    "time_sent": "2023-03-19T04:37:50.261Z",
+    "data": {
+      "host": 1
+    }
+  }
+},
+{
+  "model": "notifications.notification",
+  "pk": 3,
+  "fields": {
+    "sender": [
+      "JohnDoe"
+    ],
+    "receiver": [
+      "JaneSmith"
+    ],
+    "read_by_receiver": false,
+    "notif_type": "request-update",
+    "time_sent": "2023-03-19T18:49:54.992Z",
+    "data": {
+      "host": 1,
+      "status": "approved"
+    }
+  }
+},
+{
+  "model": "properties.property",
+  "pk": 1,
+  "fields": {
+    "host": [
+      "JohnDoe"
+    ],
+    "title": "Definitely not Robarts",
+    "longitude": "-79.3994500124",
+    "latitude": "43.6645625368",
+    "address": "130 St. George St., Toronto, ON",
+    "base_price": 800,
+    "rating": "0.0",
+    "num_ratings": 0,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "guest_limit": 4
+  }
+},
+{
+  "model": "properties.propertyimage",
+  "pk": 1,
+  "fields": {
+    "image": "images/dog.jpg",
+    "property": 1
+  }
+},
+{
+  "model": "properties.unavailable",
+  "pk": 1,
+  "fields": {
+    "start_date": "2022-07-24",
+    "end_date": "2022-07-28",
+    "property": 1,
+    "is_reservation": false,
+    "request": null
+  }
+},
+{
+  "model": "properties.unavailable",
+  "pk": 2,
+  "fields": {
+    "start_date": "2023-09-29",
+    "end_date": "2023-09-30",
+    "property": 1,
+    "is_reservation": true,
+    "request": 2
+  }
+},
+{
+  "model": "properties.priceadjustment",
+  "pk": 1,
+  "fields": {
+    "start_date": "2023-10-01",
+    "end_date": "2023-10-30",
+    "property": 1,
+    "price_per_night": "1000.00"
+  }
+},
+{
+  "model": "reqs.propertyrequest",
+  "pk": 1,
+  "fields": {
+    "created": "2023-03-19T03:53:18.255Z",
+    "status": "pending",
+    "type": "property",
+    "receiver": [
+      "JohnDoe"
+    ],
+    "requester": [
+      "JaneSmith"
+    ],
+    "property": 1,
+    "start_date": "2023-05-04",
+    "end_date": "2023-05-19",
+    "expiry_date": "2023-04-29"
+  }
+},
+{
+  "model": "reqs.propertyrequest",
+  "pk": 2,
+  "fields": {
+    "created": "2023-03-19T04:37:50.269Z",
+    "status": "approved",
+    "type": "property",
+    "receiver": [
+      "JohnDoe"
+    ],
+    "requester": [
+      "JaneSmith"
+    ],
+    "property": 1,
+    "start_date": "2023-09-29",
+    "end_date": "2023-09-30",
+    "expiry_date": "2023-04-29"
+  }
+}
+]

@@ -1,0 +1,61 @@
+/* index.html */
+
+.height-200 {
+    height: 200px;
+}
+
+#filters-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+    column-gap: 20px;
+}
+
+.filter-input {
+    padding: 10px;
+    border: 2px solid grey;
+    color: #222222;
+    border-radius: calc(10px + 1rem);
+    background-color: white;
+}
+
+.filter-label-text {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin: 0 0 5px 5px;
+    display: block;
+}
+
+.filter-select {
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
+}
+
+.amenities-button {
+    min-width: 4rem;
+    margin: 0.25rem 0;
+}
+
+.modal-container {
+    margin: 0.5rem 0;
+}
+
+@media only screen and (max-width: 1050px){
+    #filter-guests-container {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px){
+    #filter-check-out-container, #filter-check-in-container {
+        display: none;
+    }
+}
+
+#filter-location-container{
+    flex-basis: 300px;
+}
+
+#filter-sort-text {
+    width: 5.4rem;
+}

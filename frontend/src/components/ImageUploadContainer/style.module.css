@@ -1,0 +1,32 @@
+.preview-image {
+    aspect-ratio: 1.5;
+    object-fit: cover;
+    display: inline;
+    width: 500px;
+}
+
+.preview-placeholder {
+    aspect-ratio: 1.5;
+    background-color: lightgray;
+    display: inline;
+    width: 500px;
+}
+
+.clear-img-btn {
+    position: absolute;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    top: 0;
+    right: 0;
+    opacity: 50%;
+}
+
+.clear-img-btn:after {
+    display: inline-block;
+    content: "\00d7";
+    font-size: 40px;
+    line-height: 20px;
+}
+
